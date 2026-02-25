@@ -1,0 +1,49 @@
+Quiz 4
+
+Section 1: 
+1. Age Check:   Your company wants to offer a special youth discount to customers 
+between the ages of 16 and 21. Write a query to show all customers eligible for this discount.
+
+2. Excluding Certain Ages:  Some products are restricted to customers under 18 or 
+over 21. List all customers not in the 18–21 age range.
+
+3. Active Customers Only:   You want to send a newsletter to customers aged 18–21 
+who have made at least one order. Generate a list of these customers.
+
+4. Alphabetical Range:You are running a promotional email campaign for customers 
+whose first names are between 'Audrie' and 'Franklin' alphabetically. Show their 
+first and last names in descending order.
+
+5. Birth Date Filter:   Your company wants to find all customers born between January
+ 1, 2008, and January 1, 2026. Show all their information.
+
+6. Renaming Columns:    For a report, you need a column called ID instead of CustomerID.
+ Write a query that shows the IDs only.
+
+7. Concatenated Info:   Create a single column that displays a customer’s full name and age
+in the format:Name: [FirstName LastName], Age: [Age]
+
+8. Table Aliases:   Your team wants to refer to the Customers table as Persons 
+in a query. Show the CustomerID using this new table name.
+
+Section 2: 
+1. Matching Records:    List all orders along with the customer information 
+for each order. Only show results where a customer actually placed an order.
+
+2. All Customers:    List every customer, and include any orders they might 
+have placed. Show NULL or empty values for customers who haven’t placed orders yet.
+
+3. All Orders:  List every order and include the customer information if 
+available. Show NULL or empty values for orders without a customer.
+
+4. Customer Names & Purchases:  Create a list showing each customer’s full name 
+and the IDs of the items they’ve purchased. Order the list so that older customers appear first.
+
+5. Three-Table Report:  Generate a report showing customer names, their orders,
+ and the item details for each order. Only include rows where all three tables have 
+ corresponding data.
+
+6. Full Customer Info With Prices:  Generate a list that shows:AGE: [Age] Country: 
+[Country] for each customer, the item they ordered, and the item details. Include all 
+customers even if they haven’t ordered anything. Sort the results so cheaper items come 
+first.

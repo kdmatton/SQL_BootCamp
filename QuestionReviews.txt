@@ -1,0 +1,119 @@
+PART 1:
+Level 1: Core Queries
+1. Full Table View: Write a query to display all columns and all rows from the Employees table.
+2. Name Tags: Write a query that returns only FirstName, LastName, and JobTitle from the table.
+3. Nuke It: Write the SQL command to permanently remove the Employees table from the database.
+
+Level 2: Filtering & Aggregates
+1. Salary Check: Write a query to find all employees who earn more than 50000.
+2. Department Filter: Write a query to show all employees who work in the "Engineering" department.
+3. Employee Count: Write a query that returns the total number of employees.
+4. Unique Departments: Write a query that lists all departments in the table with no duplicates.
+
+Level 3: Ordering & Limits
+1. Top Earners: Write a query to list all employees sorted by Salary from highest to lowest.
+2. Alphabet Soup: Write a query to show employees sorted by LastName in alphabetical order.
+3. Department Order: Write a query to sort employees first by Department (A–Z) and then by Salary (highest first).
+
+
+
+
+
+
+-- Part 2 -- 
+Level 1: Logical Filters on Steroids (AND / OR / NOT)
+1. Find all customers who are older than 18 AND younger than 30, but NOT from Canada.
+2. Show customers who are from United States OR Mexico, but NOT both.
+3. Select customers whose FirstName starts with J OR M, but whose LastName does NOT contain son.
+4. Find customers who are under 18 OR over 65, but NOT living in United States.
+5. Show customers who are from Canada AND (Age > 21 OR Age IS NULL).
+
+Level 2: BETWEEN — Inclusive, Exclusive, and NOT
+1. Select customers whose Age is BETWEEN 20 and 29, inclusive.
+2. Find customers whose Age is NOT BETWEEN 30 and 50.
+3. Select customers who are BETWEEN 18 and 65, AND NOT BETWEEN 30 and 40.
+
+Level 3: IN — Cleaner OR Logic
+1. Find customers whose Country is IN (United States, Canada, Mexico).
+2. Show customers whose Country is NOT IN (Ukraine, Russia).
+3. Select customers who live IN (United States, Canada) AND Age > 21.
+4. Select customers whose Age is IN (18, 21, 25) instead of using BETWEEN.
+
+Level 4: Combining EVERYTHING (This is where interviews live)
+1. Logic Overload
+    * Find customers who are not ages 18-30 
+      and live in either United States, Canada
+      AND dont have a last name starting with 'A'
+2. The “OR Trap”
+    * Show customers who are from United States
+      or are the ages 25-40 and live in the Country Canada
+3. Exclusion List
+    * Find customers who are dont live in either United States, Canada
+      and are not the ages 13-19
+4. NULL + IN
+    * Select customers whose country is in either 
+      the United States or Canada or if there Country 
+      is empty.
+5. Final Boss
+    * Show customers whoages between 21-65 
+      and live in either 
+      United States, Ukraine and 
+      first name doesnt startF with A or 
+      lastname ending with son
+
+
+
+
+
+-- Part 3 -- 
+Phase 1: Comparing Data in the Same Table 
+1. The “Same Country” Question:
+How would you find customers who live in the same country as 
+other customers?
+
+2. The “Matching Last Names” Question:
+How would you find customers that share the same last name with 
+another customer?
+
+3. The “Older Than” Question:
+How would you find customers who are older than other customers 
+in the table?
+
+4. The “Age Difference” Question:
+How would you find customers who are more than 10 years older
+ than another customer?
+
+5. The “Avoiding Duplicates” Question:
+When comparing customers to each other, how would you prevent
+ duplicate or reversed results?
+
+Phase 2: Combining Results From Different Tables 
+1. The “All Countries” Question:
+How would you get a list of all countries from both customers 
+and owners without duplicates?
+
+2. The “Country and Age” Question:
+How would you combine country and age data from customers and 
+owners into one result?
+
+3. The “Filtered Combine” Question:
+How would you show customers under 21 and owners over 21 in 
+a single result?
+
+4. The “Source Label” Question:
+How would you combine customers and owners while adding a 
+column that shows whether the row came from a customer or an owner?
+
+Phase 3: Summarizing Data
+1. The “Customers per Country” Question:
+How would you count how many customers live in 
+each country?
+
+3. The “Grouped Averages” Question:
+How would you calculate the average age of customers for 
+each country?
+
+4. The “Sorting Groups” Question:
+How would you list countries by the number of customers, 
+from highest to lowest?
+

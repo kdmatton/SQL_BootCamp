@@ -1,0 +1,81 @@
+Quiz 3
+
+Phase 1: Modifying Existing Data (UPDATE & DELETE)
+
+1. The “Profile Correction” Update:
+A customer with ID 6 contacted support to fix outdated information.
+How would you update their profile so their age is 35 and their country is Italy?
+
+2. The “Birthday Passed” Adjustment:
+John Doe just celebrated a birthday.
+How would you increase his age by exactly one year without changing any other customers?
+
+3. The “Test Account” Cleanup:
+A fake account was created during development with a customer ID of 7.
+How would you permanently remove this customer from the database?
+
+4. he “Safe Mass Update” Scenario:
+A regional change affects only customers with IDs greater than 4.
+How would you update their country to Spain without touching earlier records?
+
+5. The “Policy Violation” Removal:
+Company rules state that users under 13 years old cannot remain registered.
+How would you remove all customers who break this rule?
+
+Phase 2: Controlling Result Size (LIMIT & OFFSET)
+
+1. The “Homepage Preview” Query: The frontend team needs 
+a small snapshot of customer data. How would you return 
+only the first three customers?
+
+2. The “Paginated Results” Query:
+You’re building pagination for a customer list.
+How would you skip the first two customers and return the next four?
+
+Phase 3: Data Insights & Aggregation
+
+1. The “Youngest Customer” Lookup:
+Management wants to see who the youngest customer is, not just their age.
+How would you return the first name, last name, and age of the youngest customer?
+
+2. The “Oldest Customer” Report:
+How would you return the first name, last name, and age of the oldest customer?
+
+3. The “Demographic Summary” Task:
+How would you:
+Calculate the average age of all customers
+Count the total number of customers
+Count how many unique countries customers come from
+Find the combined total age of all customers
+
+Phase 4: Pattern Matching & Text Search
+
+1. The “Starts With” Search:
+Customer support needs a list of customers whose first name begins with the letter A.
+
+2. The “Ends With” Search:
+How would you find customers whose first name ends with the letter N?
+
+3. The “Contains” Search:
+How would you locate customers whose first name contains the letters “ar” anywhere?
+
+4. The “Exact Length” Filter:
+How would you find customers whose first name is exactly two characters long?
+
+Phase 5: Cross-Table Relationships (Subqueries)
+
+1. The “Active Customers” Query:
+Sales wants to email customers who have placed at least one order.
+How would you return only customers who appear in the orders table?
+
+2. The “Inactive Customers” Query:
+Marketing wants to target customers who have never placed an order.
+How would you find them?
+
+3. The “Valid Orders Only” Check:
+An auditor wants to confirm all orders belong to existing customers.
+How would you return only valid orders?
+
+4. The “Order Reassignment” Fix:
+An order was assigned to the wrong customer.
+How would you update OrderID 1 so it belongs to CustomerID 3?

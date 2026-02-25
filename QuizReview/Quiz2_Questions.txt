@@ -1,0 +1,16 @@
+Quiz 2
+
+Phase 1: The Logical Filter (AND, OR, NOT)
+1. The "Strict Criteria" Query: How would you find all customers from the 'United States' who are exactly 21 years old?
+2. The "Exclusion" Query: Write a statement to show all customers except those living in 'Ukraine'.
+3. The "Pattern Search": Find every customer whose FirstName does not start with the letter 'A'.
+4. The "Complex Logic": Show all customers who are either from 'Ukraine' OR are older than 20, but only if their LastName is 'Matton'.
+
+Phase 2: Range and Set Membership (BETWEEN, IN)
+1. The "Middle Ground": Select all customers whose Age is between 19 and 25 (inclusive).
+2. The "Specific List": How would you find customers who live in either 'United States', 'Ukraine', or 'Canada' without using multiple OR statements?
+3. The "Out of Bounds": Find customers whose Age is not between 13 and 19.
+
+Phase 3: Dealing with the Unknown (NULL)
+1. The "Missing Info" Hunt: Some customers didn't provide their age. How do you find all records where the Age column is empty?
+2. The "Complete Profiles": Show only the customers who have a Country listed in their profile.

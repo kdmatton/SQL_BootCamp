@@ -1,0 +1,18 @@
+QUIZ 1 
+
+Level 1: The Basics
+1. Show Everything: Write a query to see every single column and every single row in the Customers table.
+2. Specific Contact List: Write a query that only returns the FirstName and LastName of every customer.
+3. Cleanup: Write the command to completely delete the Customers table from the database.
+
+Level 2: Filtering & Counting
+1. Adults Only: Write a query to find all customers who are older than 18.
+2. International Check: Write a query to show all customers who live in "Ukraine".
+3. The Headcount: Write a query that returns the total number of rows in the table.
+4. Unique Locations: Write a query to list the names of the countries represented in the table, but without any duplicates.
+
+Level 3: Sorting (Ordering)
+1. Age Gap: Write a query to show all customers, sorted by Age from oldest to youngest.
+2. Alphabetical: Write a query to show all customers, sorted by LastName in alphabetical order (A-Z).
+3. Dual Sort: Write a query to select all customers, sorted first by Country and then by LastName.
+ 
